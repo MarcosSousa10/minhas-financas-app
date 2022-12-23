@@ -22,10 +22,10 @@ class login extends React.Component{
                                     <div className="col-lg-12">
                                         <div className="bs-component">
                                             <fieldset>
-                                                <FormGroup Label="Email: *" htmlFor="exampleInputEmail1">
+                                                <FormGroup label="Email: *" htmlFor="exampleInputEmail1">
                                                 <input type="email" onChange={e=> this.setState({email: e.target.value})} value={this.state.email} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o Email"/>
                                                  </FormGroup>                                            
-                                                 <FormGroup  Label="Senha: " htmlFor="">
+                                                 <FormGroup  label="Senha: " htmlFor="">
                                                     <input onChange={e=> this.setState({senha: e.target.value})} value={this.state.senha}  type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
                                                  </FormGroup>
                                                  <button onClick={this.entrar} className="btn btn-success">Entrar</button>
